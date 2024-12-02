@@ -5,8 +5,9 @@ import connect from "./libs/database.js";
 import Todo from "./models/Todo.js";
 import morgan from "morgan";
 
-await connect();
 const port = process.env.PORT;
+console.log("port", port);
+await connect();
 
 // Initialize the app
 const app = express();
